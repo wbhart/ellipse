@@ -1,0 +1,5 @@
+ellipse3.exe: diagell5.obj ellipse3.c
+	tcc -G -O -Z ellipse3.c diagell5.obj
+
+diagell5.obj: diagell5.asm
+	tasm /mx diagell5
